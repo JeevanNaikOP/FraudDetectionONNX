@@ -20,7 +20,7 @@ def result(request):
         }
 
     username = os.getenv("USERNAME")
-    password : os.getenv("PASSWORD")
+    password = os.getenv("PASSWORD")
     
     auth = (username,password)
 
