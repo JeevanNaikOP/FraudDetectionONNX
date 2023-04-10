@@ -25,7 +25,7 @@ def result(request):
     auth = (username,password)
 
     data = json_string
-    print(data)
+  
     res = requests.post('https://192.86.32.113:19443/zosConnect/services/ONNX?action=invoke', auth=auth, data=data, headers=header,verify=False)
     json_out = (json.loads(res.text))
     json_out = json_out['FRAUDRES']['FRAUDRES']['XDATA2'][0]
