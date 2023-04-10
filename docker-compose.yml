@@ -1,8 +1,8 @@
 version: '3'
 services:
-  credit_worthiness:
+  frauddetection_onnx:
     env_file: .env
-    container_name: credit_worthiness
+    container_name: frauddetection_onnx
     build:
       context: .
       dockerfile: Dockerfile
