@@ -94,7 +94,7 @@ button[type="submit"]:hover {
         <form method="post" action="result">
             {% csrf_token %}
             {{form.as_p }}
-            <h1 class="result">Result: </h1>
+            {% comment %} <h1 class="result">Result: </h1> {% endcomment %}
         <button type="submit" class="btn btn-primary">Calculate</button>
     </form>
 	</main>
